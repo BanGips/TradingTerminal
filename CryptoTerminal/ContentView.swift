@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BinanceAPI
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +17,16 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+            let api = BinanceApi()
+            let r = BinanceTimeRequest()
+            do {
+                let result2 = try await api.send(r)
+                print(result2)
+            } catch {
+                print(error)
+            }
+        }
     }
 }
 

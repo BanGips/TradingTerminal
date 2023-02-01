@@ -7,18 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40BE168D29897CE2005801EE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40BE168C29897CE2005801EE /* KeychainSwift */; };
+		40BE168F29898699005801EE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40BE168E29898699005801EE /* KeychainSwift */; };
+		40BE1693298AC765005801EE /* BinanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE1692298AC765005801EE /* BinanceError.swift */; };
 		40D4052C2988396900FDA494 /* CryptoTerminalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4052B2988396900FDA494 /* CryptoTerminalApp.swift */; };
 		40D4052E2988396900FDA494 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4052D2988396900FDA494 /* ContentView.swift */; };
 		40D405302988396A00FDA494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D4052F2988396A00FDA494 /* Assets.xcassets */; };
 		40D405332988396A00FDA494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D405322988396A00FDA494 /* Preview Assets.xcassets */; };
+		40D4053B29883A5E00FDA494 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 40D4053A29883A5E00FDA494 /* Alamofire */; };
+		40D4054429883A9500FDA494 /* BinanceAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D4054329883A9500FDA494 /* BinanceAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40D4054729883A9500FDA494 /* BinanceAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D4054129883A9500FDA494 /* BinanceAPI.framework */; };
+		40D4054829883A9500FDA494 /* BinanceAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40D4054129883A9500FDA494 /* BinanceAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40D4054F29883AA400FDA494 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = 40D4054E29883AA400FDA494 /* Alamofire */; };
+		40D4055429883AE100FDA494 /* BinanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4055029883AE000FDA494 /* BinanceRequest.swift */; };
+		40D4055529883AE100FDA494 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4055129883AE000FDA494 /* Extensions.swift */; };
+		40D4055629883AE100FDA494 /* BinanceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4055229883AE100FDA494 /* BinanceApi.swift */; };
+		40D4055729883AE100FDA494 /* BinanceRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4055329883AE100FDA494 /* BinanceRequests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		40D4054529883A9500FDA494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40D405202988396900FDA494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40D4054029883A9500FDA494;
+			remoteInfo = BinanceAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40D4054C29883A9500FDA494 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40D4054829883A9500FDA494 /* BinanceAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		40BE1692298AC765005801EE /* BinanceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceError.swift; sourceTree = "<group>"; };
 		40D405282988396900FDA494 /* CryptoTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4052B2988396900FDA494 /* CryptoTerminalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTerminalApp.swift; sourceTree = "<group>"; };
 		40D4052D2988396900FDA494 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40D4052F2988396A00FDA494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40D405322988396A00FDA494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40D4054129883A9500FDA494 /* BinanceAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinanceAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D4054329883A9500FDA494 /* BinanceAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinanceAPI.h; sourceTree = "<group>"; };
+		40D4055029883AE000FDA494 /* BinanceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceRequest.swift; sourceTree = "<group>"; };
+		40D4055129883AE000FDA494 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		40D4055229883AE100FDA494 /* BinanceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceApi.swift; sourceTree = "<group>"; };
+		40D4055329883AE100FDA494 /* BinanceRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinanceRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +69,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BE168D29897CE2005801EE /* KeychainSwift in Frameworks */,
+				40D4054729883A9500FDA494 /* BinanceAPI.framework in Frameworks */,
+				40D4053B29883A5E00FDA494 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D4053E29883A9500FDA494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BE168F29898699005801EE /* KeychainSwift in Frameworks */,
+				40D4054F29883AA400FDA494 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				40D4052A2988396900FDA494 /* CryptoTerminal */,
+				40D4054229883A9500FDA494 /* BinanceAPI */,
 				40D405292988396900FDA494 /* Products */,
+				40D4054D29883AA400FDA494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				40D405282988396900FDA494 /* CryptoTerminal.app */,
+				40D4054129883A9500FDA494 /* BinanceAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +125,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		40D4054229883A9500FDA494 /* BinanceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				40D4054329883A9500FDA494 /* BinanceAPI.h */,
+				40D4055229883AE100FDA494 /* BinanceApi.swift */,
+				40D4055029883AE000FDA494 /* BinanceRequest.swift */,
+				40D4055329883AE100FDA494 /* BinanceRequests.swift */,
+				40D4055129883AE000FDA494 /* Extensions.swift */,
+				40BE1692298AC765005801EE /* BinanceError.swift */,
+			);
+			path = BinanceAPI;
+			sourceTree = "<group>";
+		};
+		40D4054D29883AA400FDA494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40D4053C29883A9500FDA494 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D4054429883A9500FDA494 /* BinanceAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		40D405272988396900FDA494 /* CryptoTerminal */ = {
@@ -77,15 +166,43 @@
 				40D405242988396900FDA494 /* Sources */,
 				40D405252988396900FDA494 /* Frameworks */,
 				40D405262988396900FDA494 /* Resources */,
+				40D4054C29883A9500FDA494 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40D4054629883A9500FDA494 /* PBXTargetDependency */,
+			);
+			name = CryptoTerminal;
+			packageProductDependencies = (
+				40D4053A29883A5E00FDA494 /* Alamofire */,
+				40BE168C29897CE2005801EE /* KeychainSwift */,
+			);
+			productName = CryptoTerminal;
+			productReference = 40D405282988396900FDA494 /* CryptoTerminal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40D4054029883A9500FDA494 /* BinanceAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40D4054929883A9500FDA494 /* Build configuration list for PBXNativeTarget "BinanceAPI" */;
+			buildPhases = (
+				40D4053C29883A9500FDA494 /* Headers */,
+				40D4053D29883A9500FDA494 /* Sources */,
+				40D4053E29883A9500FDA494 /* Frameworks */,
+				40D4053F29883A9500FDA494 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CryptoTerminal;
-			productName = CryptoTerminal;
-			productReference = 40D405282988396900FDA494 /* CryptoTerminal.app */;
-			productType = "com.apple.product-type.application";
+			name = BinanceAPI;
+			packageProductDependencies = (
+				40D4054E29883AA400FDA494 /* Alamofire */,
+				40BE168E29898699005801EE /* KeychainSwift */,
+			);
+			productName = BinanceAPI;
+			productReference = 40D4054129883A9500FDA494 /* BinanceAPI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +217,10 @@
 					40D405272988396900FDA494 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					40D4054029883A9500FDA494 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
 				};
 			};
 			buildConfigurationList = 40D405232988396900FDA494 /* Build configuration list for PBXProject "CryptoTerminal" */;
@@ -111,11 +232,16 @@
 				Base,
 			);
 			mainGroup = 40D4051F2988396900FDA494;
+			packageReferences = (
+				40D4053929883A5E00FDA494 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				40BE168B29897CE2005801EE /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 40D405292988396900FDA494 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				40D405272988396900FDA494 /* CryptoTerminal */,
+				40D4054029883A9500FDA494 /* BinanceAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +253,13 @@
 			files = (
 				40D405332988396A00FDA494 /* Preview Assets.xcassets in Resources */,
 				40D405302988396A00FDA494 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40D4053F29883A9500FDA494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +275,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40D4053D29883A9500FDA494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BE1693298AC765005801EE /* BinanceError.swift in Sources */,
+				40D4055729883AE100FDA494 /* BinanceRequests.swift in Sources */,
+				40D4055429883AE100FDA494 /* BinanceRequest.swift in Sources */,
+				40D4055629883AE100FDA494 /* BinanceApi.swift in Sources */,
+				40D4055529883AE100FDA494 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40D4054629883A9500FDA494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40D4054029883A9500FDA494 /* BinanceAPI */;
+			targetProxy = 40D4054529883A9500FDA494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		40D405342988396A00FDA494 /* Debug */ = {
@@ -195,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,18 +415,21 @@
 		40D405372988396A00FDA494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoTerminal/Preview Content\"";
+				DEVELOPMENT_TEAM = TGGFW5JA9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CryptoTerminal ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,18 +446,21 @@
 		40D405382988396A00FDA494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoTerminal/Preview Content\"";
+				DEVELOPMENT_TEAM = TGGFW5JA9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "CryptoTerminal ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +471,69 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40D4054A29883A9500FDA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BinanceAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40D4054B29883A9500FDA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BG.BinanceAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -336,7 +558,58 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		40D4054929883A9500FDA494 /* Build configuration list for PBXNativeTarget "BinanceAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40D4054A29883A9500FDA494 /* Debug */,
+				40D4054B29883A9500FDA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40BE168B29897CE2005801EE /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		40D4053929883A5E00FDA494 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40BE168C29897CE2005801EE /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40BE168B29897CE2005801EE /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		40BE168E29898699005801EE /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40BE168B29897CE2005801EE /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		40D4053A29883A5E00FDA494 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40D4053929883A5E00FDA494 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		40D4054E29883AA400FDA494 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40D4053929883A5E00FDA494 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40D405202988396900FDA494 /* Project object */;
 }

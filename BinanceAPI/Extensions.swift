@@ -34,8 +34,16 @@ extension String {
     }
 }
 
-public extension Date {
+extension Date {
     var millisecondsSince1970: TimeInterval {
         return (timeIntervalSince1970 * 1000).rounded()
+    }
+}
+
+extension Array<String> {
+    
+    var jsonRepresentable: String {
+        let data = try! JSONEncoder().encode(self)
+        return String(data: data, encoding: .utf8) ?? String()
     }
 }

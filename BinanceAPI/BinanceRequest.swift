@@ -31,3 +31,15 @@ public extension BinanceRequest {
         return request
     }
 }
+
+
+public protocol BinanceSignedRequest: BinanceRequest {
+    var timestamp: TimeInterval { get }
+}
+
+public extension BinanceSignedRequest {
+    
+    var params: [String : Any] {
+        return ["timestamp": timestamp]
+    }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		404DC678298C5DFE00918822 /* BinanceOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DC677298C5DFE00918822 /* BinanceOrders.swift */; };
 		40BE168D29897CE2005801EE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40BE168C29897CE2005801EE /* KeychainSwift */; };
 		40BE168F29898699005801EE /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40BE168E29898699005801EE /* KeychainSwift */; };
 		40BE1693298AC765005801EE /* BinanceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE1692298AC765005801EE /* BinanceError.swift */; };
@@ -50,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		404DC677298C5DFE00918822 /* BinanceOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceOrders.swift; sourceTree = "<group>"; };
+		408CCE3D298C090C0058EB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		40BE1692298AC765005801EE /* BinanceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceError.swift; sourceTree = "<group>"; };
 		40D405282988396900FDA494 /* CryptoTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4052B2988396900FDA494 /* CryptoTerminalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTerminalApp.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		40D4052A2988396900FDA494 /* CryptoTerminal */ = {
 			isa = PBXGroup;
 			children = (
+				408CCE3D298C090C0058EB9D /* Info.plist */,
 				40D4052B2988396900FDA494 /* CryptoTerminalApp.swift */,
 				40D4052D2988396900FDA494 /* ContentView.swift */,
 				40D4052F2988396A00FDA494 /* Assets.xcassets */,
@@ -132,6 +136,7 @@
 				40D4055229883AE100FDA494 /* BinanceApi.swift */,
 				40D4055029883AE000FDA494 /* BinanceRequest.swift */,
 				40D4055329883AE100FDA494 /* BinanceRequests.swift */,
+				404DC677298C5DFE00918822 /* BinanceOrders.swift */,
 				40D4055129883AE000FDA494 /* Extensions.swift */,
 				40BE1692298AC765005801EE /* BinanceError.swift */,
 			);
@@ -282,6 +287,7 @@
 				40BE1693298AC765005801EE /* BinanceError.swift in Sources */,
 				40D4055729883AE100FDA494 /* BinanceRequests.swift in Sources */,
 				40D4055429883AE100FDA494 /* BinanceRequest.swift in Sources */,
+				404DC678298C5DFE00918822 /* BinanceOrders.swift in Sources */,
 				40D4055629883AE100FDA494 /* BinanceApi.swift in Sources */,
 				40D4055529883AE100FDA494 /* Extensions.swift in Sources */,
 			);
@@ -424,9 +430,9 @@
 				DEVELOPMENT_TEAM = TGGFW5JA9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTerminal/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "CryptoTerminal ";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -455,9 +461,9 @@
 				DEVELOPMENT_TEAM = TGGFW5JA9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoTerminal/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "CryptoTerminal ";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

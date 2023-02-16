@@ -19,10 +19,11 @@ struct ContentView: View {
         .padding()
         .task {
             let api = BinanceApi()
-            let r = BinanceTimeRequest()
+            let r = BinanceDailyAccountSnapshotRequest()
+//            let r = BinanceSymbolPriceRequest(symbol: "BTCUSDT")
             do {
-                let result2 = try await api.send(r)
-                print(result2)
+                let result = try await api.send(r)
+                print(result)
             } catch {
                 print(error)
             }
